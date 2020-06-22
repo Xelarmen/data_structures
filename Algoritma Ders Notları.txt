@@ -1,0 +1,492 @@
+Yığıt&Yığın(Stack){
+	Eleman ekleme çıkarmaların en üstten yapıldığı veri yapısına yığıt denir. Bir eleman ekleneceğinde yığıtın en üstüne konulur çıkarılacağı zaman ise yığıtın en üstündeki eleman çıkartılır. Bu elemanda yığıttaki elemanlar içindeki en son eklenen elemandır. Bu nedenle yığıtlara LIFO(Last In Fırst Out) denir. 
+
+	Kullanıldığı yer: PARANTEZ DENETLEMESİ
+		Yığıt kullanımı ve Parantez Örneği: Açılan ve kapanan toplam parantez sayısı eşit olmalı. Kapanan her parantezden önce bir parantez açılmış olmalı. İfadenin sonunda parantez sayısı 0 olmalı, yani hiç bir parantez açık kalmamalı. 
+		"( = 1"     ") = -1"
+		((kod))) = -1 olduğunda hata var demektir. Derleyici parantezleri açarken +1 yapar kaparken -1 yapar. fazladan kapanan parantez hanenin -1 olmasına neden olur ve bu da hata demektir.
+		_________________________________________________________________
+
+	 	{x+(y-[a+b])*c-[(d+e)]}/(b-(g-(4-[1-n]))) 
+	 	-Bir parantezle karşılaştığında yığıta eklenir.
+	 	-İlgili parantezin karşılı ile karşılaştığında aynı ise çıkartılır(Yığıt boş değilse) Boş ise hata vardır. 
+	 	-İlgili parantezin karşılığı ile karşılaştığında aynı değilse hata vardır.
+	 	Kişisel not: Diziye bütün parantezler sırasıyla eklenir kapama parantezi varsa  ve yığının en üstünde  o kapama parantezin eşi yoksa hata vardır. 
+
+	.NET sınıf kütüphanesinde YIĞIN kütüphanesini kullanmak için STACK kütüphanesini kullanırız. 
+	Kütüphane: using System.Collections;
+	push() --> Yığıta eleman ekler
+	pop()  --> Yığıttan eleman çıkarır
+	peek() --> Yığıtın en üstündeki elemanı öğrenmek için kullanılır.
+	top()  --> Yığıtın en üstündeki elemanı öğrenmek için kullanılır.
+	count  --> Eleman sayısını int türünden döndürür
+	clean()--> Yığıtı boşaltır.
+	contains()-->Herhangi bir yığıt nesnesinin içinde aranan bir elemanın  olup olmadığını anlamak için kullanılır.
+	clone()-->Yığıtın birebir aynısını klonlar.
+
+
+
+Kuyruk(Queue){
+	Eleman eklemenin sondan ve eleman çıkarmaların baştan yapıldığı veri yapılarıdır. Kıyrıkları fifo(first in first out) listeleri de denilmektedir. Gerçek yaşamda bankalar marketler duraklar otoyollar kuyruk mantığıyla hareket eder. Ayrıca işlemci yazıcı disk gibi kaynaklar üzerideki işlemler network trafiği yönlendirilmedi de kuyruk veri yapısıyla simüle edilir. 
+
+	Öncelik kuyrukları: Temel kuyruk işlemlerinin sonuçlarını, elemanların gerçek sırasını belirlediği veri yapısıdır. Azalan ve artan sırada olabilirler. Artan öncelik kuyrugunda en küçük eleman önce, sonra ikinci küçük eleman çıkar. Örnek olarak telefon rehberi listesi.
+
+	.Net kütüphanesi Yığın işlemleri: System.Collections;
+	Queue veri yapısı.
+		Fonksiyonlar:
+		Enqueue()
+		Dequeue()
+		Clear()
+		Clone()
+		CopyTo()
+		ToArray()
+		Contains()
+		Equals()
+	kuyruk_veri_yapisi.jpg
+}
+
+Bağlı Listel(Linked List){
+	Bağlı listeler farklı bellek bölgelerinde yerleşen verilerin özel adres bağlarıyla birleştirildiği veri yapılarıdır. Veriler fiziksel olarak farklı yerlerde olsa dahi sıralı şekilde düşünülmekte ve işlenmektedir.
+	Liste veri yapısındaki her bir eleman 2 kısımdan oluşur. [LİSTE ELEMANININ DEĞERİ   |   BİR SONRAKİ LİSTE ELEMANININ ADRESİNİN İŞARETİ] 
+	
+	Listeye yeni bir eleman eklemek 3 aşamadan oluşur. 
+	1) Verinin öne eklenmesi
+	2) Verisin sona eklenmesi
+	3) Verinin belirlenen yere eklenmesi.		
+
+	ÖRNEK :
+		k1, k3, k5, k7 ardışıklığında k5 elemanı silinmesi durumunda yapı ne şekilde değişir?
+		Çözüm.
+		-> [k1|*] -> [k3|*] -> [k5|*] -> [k7|/]
+		* = bir sonraki değerin işaretçisi
+		/ = null değer
+
+	BAĞLI LİSTENİN AVANTAJLARI : 
+		1)Boyutları dinamik olarak büyüyüp küçülebilmektedir. 
+		2)Çalışma zamanında birden çok veri yapısının aynı bellek bölgesini paylaşabilmesine olanak tanır. 
+		3)Liste elemanlarının yer değişimi çok kolay ve etkindir. Dizilerde veri organizasyonu kapalıyken, Bağlı listede programcının kontrolündedir. 
+	DEZAVANTAJLAR:
+		1) 
+		2)
+		3)
+
+	Doğrusal bağlı liste örneği:
+		*Listenin ilk elemanına işaretçi ile erişilir
+		*Diğer düğümlere bağlar aracılığıyla erişilir.
+		*Son düğümün sonraki adresi NULL'dur
+		[k1|*] -> [k3|*] -> [k5|*] -> [k7|NULL]
+
+	Dairesel bağlı liste:	
+		*Tüm düğümler bir sonraki elemanı gösterir
+		*Son elemanın adresi NULL değildir İlk elemanı gösterir.
+
+	Çift Bağlaçlı Liste:
+		*Herdüğümü iki bağ içerir.
+		*İlk bağ sonraki ikinci bağ önceki için kullanılır.
+		[önceki bağı|k1|sonraki bağı] -> [önceki bağı|k3|sonraki bağı] -> [önceki bağı|k5|sonraki bağı] -> [önceki bağı|k7|NULL]
+
+	Dairesel Çift Bağlaçlı Liste:
+		*Hem daireselliği hem de çift bağlaçlılık özelliğine sahiptir
+
+
+
+
+	Linkedlist<t> Linkedlist'in bir örnek sınıfı
+	count -> Eleman sayısını verir.
+	first -> İlk Nodu'nu döndürür.
+	Last  -> Son nodunu döndürür
+	
+	Metotlar:
+	Contains -> Contains("xx") ilk bulunan xx i döndürür.
+	addfirst -> addfirst("YYY") ilk sıraya YYY ekler
+	addlast  -> addlast("QQQ")	sona qqq ekler
+	removefirst -> removefirst() ilk elemanı yok eder
+	removelast -> removelast() son elemanı yok eder
+	findlast -> findlast("zz") son zz değerini döndürür (NODE OLARAK GERİ DÖNÜŞ YAPAR)
+
+	/*NODE TÜRÜ linkedlistnode olacak*/
+
+	addafter -> addafter(aktif,"türler")
+	addbefore-> addbefore(aktif,"türler")
+	remove 	 -> remove("veri") direkt veri'yi siler
+	find     -> find("aramakistenenveri") 
+	clear	 ->	clear()
+
+}
+
+Özyineleme(Recursive){
+	Özyineleme kavramı bir algoritma olmayıp sadece algoritma tasarımınnda kullanılan bir programlama tekniğidir. Birçok algoritma uygulamasında özyinelemeli yaklaşım vardır. Bir problemi çözerken, problemi daha küçük alt problemlere parçalayarak çözer(BÖL VE YÖNET). 
+	Böyle bir tanımlama, bir nesnenin kendi cinsinden daha basit olarak ifade etmeyi sağlar. 
+
+	Fonksiyon özyineli olarak her çağrıldığından yerel değişkenler ve parametreler için bellekten yer ayrılır çıkışta da bu yerler serbest bırakılır ve bir önceki kopya etkinleştirilir. Bu işlem YIĞIN KULLANILARAK YAPILIR. Fonksiyon her çağırıldığında değişkenler YIĞININ EN ÜSTÜNE KONULUR.
+/*
+	3! FAKTÖRİYEL İÇİN ÖRNEK
+
+	 public static int fact(int 3)(1)
+        {
+            int x, y;
+            if (n == 0) return 1;
+            x = n - 1; //X 2 OLDU(1)
+            y = fact(x);//1*2  Y YE ATANDI
+            return n * y;// 2*3 RETURN EDİLDİ(12)
+
+        } 
+
+
+	        public static int fact(int 2)(3)
+	        {
+	            int x, y;
+	            if (n == 0) return 1;
+	            x = n - 1;// X 1 OLDU(4)
+	            y = fact(x);//BİR ALT FONKSİYON İÇİNDEN 1*1 GELDİ (10)
+	            return n * y;//1*2 RETURN OLDU(11)
+
+	        } 
+
+
+		        public static int fact(int 1)(5)
+		        {
+		            int x, y;
+		            if (n == 0) return 1;
+		            x = n - 1;
+		            y = fact(x);//Y = 1 OLDU (6)
+		            return n * y; //1 * 1 RETURN EDİLDİ(9)
+
+		        } 
+
+			        public static int fact(int 0)(7)
+			        {
+			            int x, y;
+			            if (n == 0) return 1;//RETURN 1 OLDU(8)
+			            x = n - 1;
+			            y = fact(x);
+			            return n * y;
+
+			        }
+*/
+	Fibonacci dizisi kendinden önceki 2 elemanın toplamı şeklinde ifade eden dizdir.
+	0,1,1,2,3,5,8,13,21,34....
+	fib(n)=n if(n==0||n==1)
+	fib(n) = fib(n-2)+fib(n-1) if(n>1)
+
+	Örnek:
+	fib(4)	= fib(2) + fib(3)
+			= fib(0) + fib(1) + fib(1) +fib(2)
+			= 0 + 1 + 1 + fib(0) + fib(1)
+			= 0 + 1 + 1 + 0 + 1
+			= 3
+//n=4 için tablo hazırlama faktoriyeldeki
+
+}
+
+Ağaçlar(Trees)(FİNALDE ÇIKABİLİR){
+	Ağaç yapısının kullanım alanlarını göz önüne aldığımızda arama işlemleri sıkıştırma algoritmaları, veri sıralaması, işletim sistemlerindeki dosya hiyeraşileri, oyun programlama, sınıflandırma teorileri ve veri tabanı yönetim sistemlerinde sıklıla kullanılan bir veri yapısıdır. Bağlı listeler yığınlar ve kuyruklar doğrusal veri yapılarıdı aağaçla ise DOĞRUSAL OLMAYAN belirli niteliklere sahip İKİ BOYUTLU veri yapılarıdır. Düğümlerden iki veya daha fazla bağ çıkabilir. 
+	trees.jpg
+
+	AĞAÇLARDA DÜZEYLER:
+	dalyapisi.png
+	Düğüm(Node): Ağacın her bir elemanına düğüm adı verilir. (a,b,c hepsine denir)
+	Dallar(Branch): Ağacın yapılarını birbirine bağlayan yapıdır (a-b arasındaki yapı)
+	Kök(Root):	Düzey 0daki tek düğümdür (a)
+	Çocuk(Child): Bir düğümün sol ve sağ bağı aracılığıyla bağlandığı düğümler.(f, cnin çocuğu mesela)
+	Ebeveyn(Parent): B düğümü d ve e nin ebeveynidir.
+	Ağacın Derinliği(Depth): Bir düğümün kök düğümden olan uzaklığıdır. 
+	//Yaprak döker bir yanımız bir yanımız bahar bahçe
+	Yaprak(Leaf): Sol ve Sağ  bağı boş olan düğümlera yaprak denir.(d,g,h ve ı yapraklardır)
+	Kardeş(Brother): Aynı Parent'a sahip 2 düğüme kardeş denir. 
+	Üst Düğüm(Ancestor): Bir düğümün parent'i 1. ankestorudur. Parent'in Parent'i 2. ankestordur. Kök tüm düğümlerin Ankestorudur.
+
+	AĞAÇ TÜRLERİ:
+	İkili Ağaç(Binary Tree):Sonlu düğümler kümesidir. Bu küme boş bir küme de olabilir. 
+		Eğer boş değilse;
+						-Kökü vardır.
+						-Her düğüm en fazla 2 düğüme bağlıdır.
+						-Kök hariç her düğüm bir daldan gelir.
+						-Tüm düğümlerden yukarı çıkıldıkça köke ulaşılır.
+			Full Binary Tree:Yukardaki tüm özellikleri kapsar extra olarak;
+						-Her yaprağı aynı derinliktedir.
+						-Yaprak olmayan her düğümün 2 çocuğu vardır.
+			Complete Binary Tree:
+						-Full binary tree'de yeni bir derinliğe soldan sağa doğru düğümler eklendiğinde oluşan ağaçlara complete binary tree denir. Böyle bir ağaçta bazı yapraklar diğerlerinen daha derindir. en derin düzeyde düğümler soldadır. 
+
+	General Tree:Her düğümün En fazla iki çocuğu olabilme sınırı olmayan ağaçlardır. 
+
+	İkili Arama Ağacı(Binary Search Tree)
+
+	Boş olanveya her düğümü aşağıdaki şartlara uyan ağaçlardır
+	-Kökün solundaki alt ağaçlar (eğer varsa) kökteki değerden küçüktür.
+	-Kökün sağındaki alt ağaçlar  (eğer varsa) kökteki değerden büyüktür
+	-En önemli özelliği, eğer sıralanırsa çok hızlı bir şekilde ekleme, silme , arama yapabilmesidir
+	-Ağaç veri yapısı üzerinden işlem yapan fonksiyonlar recursive'dir. Çünkü recursive kendi kendini çağırır. Ağaç da birden fazla alt ağaçtan oluşur. Recursive mantığı ile aynıdır. Recursive hızlıdır.
+
+
+	ÖRNEK: 
+	Değer araması
+	treesearch.png
+	40 değeri aranır
+	1) 40<69 old için sola dal
+	2) 40>38 olduğu için sağa dal 
+	3)40<44 olduğu için sola dal
+	4)40=40 olduğu için bulunur
+
+	60 değeri aranır
+	1) 62>60 olduğundan sağa
+	2) 62<78 olduğu için sola 
+	3) 62<65 olduğundan sola
+	4) 62 = NULL ile karşılaştırılır bulunamadı.
+
+	ÖRNEK:
+	47,25,43,77,65,68,93,11,17,44,31,7
+	ağaçörnek.jpg
+
+	ÖRNEK 
+	45,35,51,23,38,36,56,55,66
+
+	45 kök olur sonraki elemanlar büyükse sağa küçükse sola şekilde yerleştirilerek ağaç oluşturulur.
+
+
+
+
+	İKİLİ AĞAÇLAR ÜZERİNDE DOLAŞMA İŞLEMLERİ(TRAVERSE SINAVDA ÇIKAR)
+
+	Ağaç üzerideki tüm düğümlere uğrayarak gerçekleşiyor.
+	
+	traverse.png
+
+	PREORDER(KÖKTEN BAŞLAYARAK): İlk adımda köke uğranır sol alt ağaç kökten başlayarak dolaşır. (bac)
+														 sağ alt ağaç kökten başlayarak dolaşır. (feg)
+
+	POSTORDER(SONDAN BAŞLAYARAK):Sol alt ağaç yapraktan başlayarak dolaşır.(acb)
+								 Sağ alt ağaç yaptaktan başlayarak dolaşır.(egf)
+								 Köke Uğranır.(d)
+
+	INORDER(SIRALI):Sol alt ağaç en soldan başlayarak dolaşılır.(abc)
+					Köke uğranır(d)
+					Sağ Alt Ağaç soldan başlayarak dolaşılır(efg)
+
+
+	agacuygulama1.jpg
+	agacinorder.jpg
+
+	!!!INORDER'DA KÜÇÜKTEN BÜYÜĞE SIRALANIR!!!
+
+	DEĞER EKLEME ÇIKARMA
+	
+	agacelemanekleme.jpg
+	
+	62 Eklenmek İstiyor
+	45 Eklenmek İstiyor 
+
+	Silme: 
+	1) Sağ bağda çocuk yoksa sol alt nod ile değiş
+	agaccıkarmamadde1.jpg
+
+	2) Sağ bağdaki çocuğun sol bağ çocuğu yok ise sağ çocukla değiştirir
+	agaccıkarmamadde2.jpg
+
+	3) Sağ bağdaki çocuğun sol çocuğu var ise, sağ ağaçtaki en küçük değeri seç.
+	agaccıkarmamadde3.jpg
+
+
+AĞAÇ VERİ YAPISI KOD:
+
+List -> Veri Yapısı
+Add
+Remove
+Count
+CopyTo 
+AddRange
+Reverse
+Sort
+BinarySearch
+Insert(hazı oluşturulmuş ağaca veri ekler)
+
+
+
+
+}
+
+/*buraya kadar vizede var*/
+
+Algoritmaların Karşılaştırılması{
+	-Bir programın zaman karmaşıklığı (time complexity) programın işletim süresidir. 
+	-Bir programın yer karmaşıklığı(space complexity) programın işletiğidiği sürede geçiçi bellek üzerinde kapladığı yerdir. 
+	-En kısa sürede sonuca ulaşan, en az işlem yapan, en az yer harcayan, en çok anlaşılabilir olan
+
+	Algoritmaların temelinde yatan bir işlemi bularak, bunun kaç defa tekrarlandığını bulma düşüncesi programın işletim zamanı(running time) kavramını oluşturur.
+	İşlem zamanını varsa çarpma yoksa toplama belirtir. 
+	1-100 arasındaki sayıları toplayacak olursak buradaki belirleyici işlem toplamadır ama 2*500 dersek 500tane 2 yi toplar bu da 500 farklı işlem olacağından çarpma daha önemlidir.
+
+
+	Worst-Case Running Time
+	Giriş verileri içinherhangi bir girdinin en uzun işletim süresidir. Örnek: 100 elemanlı dizide aradığımız elemanın 100. eleman olmasıdı
+	T(n)= n
+
+	Average-Case Running Time
+	Giriş verileri için tüm girdilerin ortalamasıdır.
+	T(n)=[(n+1)/2,n]
+
+	Benchmark Testi:
+	Programlar değişik yöntemlere göre kodlanır ve karşılaştırma yapılır. Ortak özelliği aynı dilde olması. Programın çalıştırılmasından önce ve sonra bilgisayarın saati kaydedilir iki saat arasındaki fark alınır ve geçen süre bulunur. Benchmark testi işlemlerin belirli bir bilgisayarda aynı işlemci ve aynı kaynaklar kullanılarak ne kadar sürdüğünü gösterir.
+
+	Asimptotik Analiz:
+	o-notasyonu, w-notasyonu, q-notasyonu, O-notasyonu(big o veya omikron denir)
+	Fonksiyonların artış oranlarının uç sınırlanını belirliyor. 
+	f(n) = O(g(n)) n >= k için 0 <= f(n) <= g(n) olacak şekilde sabitler tanımlıysa bu fonksiyonun büyüklük derecesi O ile gösterilir. 
+
+	ÖRNEK:
+	f(n)= n^4 + 100n^2 + 10n + 50 
+	Burada işletim zamanı olarak çarpmanın en yüksek işlem gücüne sahip olacağından  en büyük işletim zamanına sahip değer O(n^4) (big o) olacaktır. 
+
+	toplam = 0;
+	for(int i =0 ; i < n ; i++){
+	toplam = toplam + i;
+	}   Burada O(n) karmaşıklığın sahibi n'dir.
+
+
+
+	toplam = n * ( n + 1 ) / 2
+	Burada ise O(1)'dir tek satır olduğu için
+
+
+
+
+
+
+	ARTIŞ ORANI FONKSİYONU
+	O(1) : Sabit Zaman. N elemanlı bir dizinin i elemanına değer ataması O(1)
+	
+	O(n) : Doğrusal zamandır. N elemanı bir dizinin tüm elemanlarının ekrana yazdırılması O(n)'dir.
+		   Sıralı olmayan dizide bir elemanın aranması O(n)'dir.
+	
+	O(log2n(2 tabanında n)): 1 ile n arasındadır. O(1)'den fazla O(n)'den azdır.
+							 Sıralı bir listenin elemanları içinde binary search uygulamak.
+	
+	O(n^2): İkinci dereceli zaman
+			Basit sıralama algoritmaları (Selection Sort)
+	
+	O(nlog2n(taban)): Bazı hızlı arama algoritmaları. O(log2n) ile O(n^2) arasında işletim süresine sahiptir. 
+	
+	O(n^3): Kübik Zaman
+			Üç boyutlu bir tamsayı tablosunda her elemanın değerini güncelleyen bir algoritma hazırladınız. Onun büyüklüğünü ifade eder.
+
+	O(2^n):	Üstel zaman. Çok büyük değerler ulaşır. 
+
+	ÖRNEK:
+	Bir bilgisayar sayiyede 1 000 000 000 adım gerçekleştirebilecek kadar hızlı 
+	Program n^3 adım sürüyor
+	O(n^3)
+	n = 1000 olarak verilmiştir. 1000^3 = 1 000 000 000 programın çalışması 1 sn sürecek
+
+
+
+
+	KABARCIK SIRALAMASI(Bubble Sort): Sıralama teknikleri içerisinde anlaşılması ve programlanması kolay olmasına rağmen etkinliği en az olan algoritmalardandır. 
+	Bubble Sort:
+	public void bubble_sort(int[] dizi){
+	for(int i = 0; i< dizi.length-1 ; i++){
+		for(int j = 1 ; j < dizi.length-1 ; j++){
+			if(dizi[j] < dizi[j-1]){
+				int gecici = dizi[j-1];
+				dizi[j-1]= dizi[j];
+				dizi[j] = gecici;
+				}
+			}
+		}
+	}
+	int[] dizi = {3,1,4,1,5,9,2,6,5,3};
+
+	
+
+
+
+Quicksort(Hızlı Sıralama)
+1)Diziden herhangi bir sayı pivot olarak seçilir
+2)Sayı dizisi pivottan küçük olan tüm sayılar sola diğer sayılar sağa olacak şekilde parcalara ayrılır. Eleman son parçada olması gerektiği yere gelir, bu aşamaya bölümlendire denir.
+3)Pivotun sol ve sağ yanındaki iki ayrı küçük parça yeniden çağırılarak sıralanır. 
+4)Bu işlemler gerçekleştirilirken özyineleme kullanılır. 
+
+ÖRNEK: 
+5,7,2,9,6,1,4,7 
+1) 8/2 = 4 (ORTANCA ELEMAN BULUNUR)
+	PİVOT = 9 
+2)5,7,2,6,1,4,7,(9)
+
+3) 7/2 = 4 PİVOT = 6
+
+4) 5,7,2,(6),1,4,7,(9)
+
+5) SOL PİVOT = 2
+   5,(2),1,4,(6),7,7,(9)
+6)1,(2),(4),5,6,7,7,(9)
+
+
+ÖRNEK 2:
+ Sayılar {9,4,6,7,3,8,1}
+ 1) Dizinin ortancaso sayılar{3}= 7
+ 2) 7yi büyükler ve küçükler olarak 2 parçaya ayır
+  									3 1 4 5 (7) 9 8 
+ 3)	7den küçük elemanların ortancasını bul sayilar[2] = 1
+ 4) Soldaki parça oluşturulur (1) 3 4 6
+ 5) Büyük elemanların ortancası bulunur (8)
+ 6) (8) 9 
+ 7) 4. maddedeki sağ parçasının ortancası bulunur.
+ 8) 7. madde işletilir. 3 (4) 6
+ 9) Birleştirme yapılır (1) 3 (4) 6 (7) (8) 9
+
+ BU ARAMA METODU O(NLOG2N(N*LOG 2TABANINDA N))'DİR
+
+
+
+ SELECTION SORT
+ Seçimli Sıralama
+ 1) Dizinin ilk elemanı en küçük eleman kabul edilir.
+ 2)En lüçük eleman aranıyor bulunduğu zaman ilk eleman ile yer değiştiriyor. 
+ 3)Kalan elemanlar arasında 2. en küçük aranır ve 2. elemanla değiştirilir. Bu şekilde devam eder.
+	
+	7,3,-15,40,18,2
+	-15,3,7,40,18,2
+	-15,2,7,40,18,3
+	-15,2,3,40,18,7
+	-15,2,3,7,18,40
+	-15,2,3,7,18,40
+
+INSERTION SORT
+DERSTE YOKTUM
+
+
+
+
+MERGE SORT(BİRLEŞTİRMELİ SIRALAMA)
+Girdi olarak aldığı diziyi en küçük hale gelene kadar ikili gruplara böler ve karşılaştırma yöntemi yaparak diziyi sıralar.
+1. Sıralı olmayan diziyi ortadan eşit olarak iki alt diziye böler
+2. Alt dizileri kendi içinde sıralar.
+3. Sıralı alt diziyi tek bir dizi olacak şekilde birleştirir
+				6	3	5	1	8	2	4	7
+		
+			6	3	5	1				8	2	4	7
+		
+		6	3		5	1				8	2		4	7
+
+6		3		5		1				8		2		4		7
+	
+
+
+
+}
+
+Algoritma Analizi(Compelixty=karmaşıklık){
+	
+}
+
+Sıralama ve arama algoritmaları(Sorting and Searching){
+	
+}
+
+Çizge - graph ve uygulamaları(Graphs){
+	
+}
+
+
+	
+					

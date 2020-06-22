@@ -1,0 +1,6 @@
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\quicksort\quicksort\quicksort\bin\Debug\quicksort.exe.config
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\quicksort\quicksort\quicksort\bin\Debug\quicksort.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\quicksort\quicksort\quicksort\bin\Debug\quicksort.pdb
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\quicksort\quicksort\quicksort\obj\Debug\quicksort.csprojAssemblyReference.cache
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\quicksort\quicksort\quicksort\obj\Debug\quicksort.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\quicksort\quicksort\quicksort\obj\Debug\quicksort.pdb

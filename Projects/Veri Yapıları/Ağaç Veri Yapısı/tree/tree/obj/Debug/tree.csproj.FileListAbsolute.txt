@@ -1,0 +1,6 @@
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Ağaç Veri Yapısı\tree\tree\bin\Debug\tree.exe.config
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Ağaç Veri Yapısı\tree\tree\bin\Debug\tree.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Ağaç Veri Yapısı\tree\tree\bin\Debug\tree.pdb
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Ağaç Veri Yapısı\tree\tree\obj\Debug\tree.csprojAssemblyReference.cache
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Ağaç Veri Yapısı\tree\tree\obj\Debug\tree.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Ağaç Veri Yapısı\tree\tree\obj\Debug\tree.pdb

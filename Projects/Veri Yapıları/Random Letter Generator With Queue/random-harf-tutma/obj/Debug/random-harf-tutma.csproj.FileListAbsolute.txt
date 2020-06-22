@@ -1,0 +1,12 @@
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\random-harf-tutma\random-harf-tutma\bin\Debug\random-harf-tutma.exe.config
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\random-harf-tutma\random-harf-tutma\bin\Debug\random-harf-tutma.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\random-harf-tutma\random-harf-tutma\bin\Debug\random-harf-tutma.pdb
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\random-harf-tutma\random-harf-tutma\obj\Debug\random-harf-tutma.csproj.CoreCompileInputs.cache
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\random-harf-tutma\random-harf-tutma\obj\Debug\random-harf-tutma.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\random-harf-tutma\random-harf-tutma\obj\Debug\random-harf-tutma.pdb
+C:\Users\Abdulkadir\Desktop\Algoritma ve Veri Yapıları\random-harf-tutma\random-harf-tutma\bin\Debug\random-harf-tutma.exe.config
+C:\Users\Abdulkadir\Desktop\Algoritma ve Veri Yapıları\random-harf-tutma\random-harf-tutma\bin\Debug\random-harf-tutma.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ve Veri Yapıları\random-harf-tutma\random-harf-tutma\bin\Debug\random-harf-tutma.pdb
+C:\Users\Abdulkadir\Desktop\Algoritma ve Veri Yapıları\random-harf-tutma\random-harf-tutma\obj\Debug\random-harf-tutma.csprojAssemblyReference.cache
+C:\Users\Abdulkadir\Desktop\Algoritma ve Veri Yapıları\random-harf-tutma\random-harf-tutma\obj\Debug\random-harf-tutma.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ve Veri Yapıları\random-harf-tutma\random-harf-tutma\obj\Debug\random-harf-tutma.pdb

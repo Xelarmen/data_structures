@@ -1,0 +1,7 @@
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\bağlılisteler\nodetüründebağlilisteler\nodetüründebağlilisteler\bin\Debug\nodetüründebağlilisteler.exe.config
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\bağlılisteler\nodetüründebağlilisteler\nodetüründebağlilisteler\bin\Debug\nodetüründebağlilisteler.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\bağlılisteler\nodetüründebağlilisteler\nodetüründebağlilisteler\bin\Debug\nodetüründebağlilisteler.pdb
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\bağlılisteler\nodetüründebağlilisteler\nodetüründebağlilisteler\obj\Debug\nodetüründebağlilisteler.csprojAssemblyReference.cache
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\bağlılisteler\nodetüründebağlilisteler\nodetüründebağlilisteler\obj\Debug\nodetüründebağlilisteler.csproj.CoreCompileInputs.cache
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\bağlılisteler\nodetüründebağlilisteler\nodetüründebağlilisteler\obj\Debug\nodetüründebağlilisteler.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\bağlılisteler\nodetüründebağlilisteler\nodetüründebağlilisteler\obj\Debug\nodetüründebağlilisteler.pdb

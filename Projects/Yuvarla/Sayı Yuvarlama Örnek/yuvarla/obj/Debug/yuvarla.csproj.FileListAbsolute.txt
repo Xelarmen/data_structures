@@ -1,0 +1,10 @@
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarla\yuvarla\bin\Debug\yuvarla.exe.config
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarla\yuvarla\bin\Debug\yuvarla.exe
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarla\yuvarla\bin\Debug\yuvarla.pdb
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarla\yuvarla\obj\Debug\yuvarla.csprojAssemblyReference.cache
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarla\yuvarla\obj\Debug\yuvarla.csproj.CoreCompileInputs.cache
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarla\yuvarla\obj\Debug\yuvarla.exe
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarla\yuvarla\obj\Debug\yuvarla.pdb
+C:\Users\Abdulkadir\Desktop\Algoritma ve Veri Yapıları\Yuvarla\yuvarla\yuvarla\obj\Debug\yuvarla.csprojAssemblyReference.cache
+C:\Users\Abdulkadir\Desktop\Algoritma ve Veri Yapıları\Yuvarla\yuvarla\yuvarla\obj\Debug\yuvarla.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ve Veri Yapıları\Yuvarla\yuvarla\yuvarla\obj\Debug\yuvarla.pdb

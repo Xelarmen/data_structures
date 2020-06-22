@@ -1,0 +1,6 @@
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\selection sort\selectionsort\selectionsort\bin\Debug\selectionsort.exe.config
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\selection sort\selectionsort\selectionsort\bin\Debug\selectionsort.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\selection sort\selectionsort\selectionsort\bin\Debug\selectionsort.pdb
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\selection sort\selectionsort\selectionsort\obj\Debug\selectionsort.csprojAssemblyReference.cache
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\selection sort\selectionsort\selectionsort\obj\Debug\selectionsort.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\selection sort\selectionsort\selectionsort\obj\Debug\selectionsort.pdb

@@ -1,0 +1,7 @@
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarlama\yuvarlama\bin\Debug\yuvarlama.exe.config
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarlama\yuvarlama\bin\Debug\yuvarlama.exe
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarlama\yuvarlama\bin\Debug\yuvarlama.pdb
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarlama\yuvarlama\obj\Debug\yuvarlama.csprojAssemblyReference.cache
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarlama\yuvarlama\obj\Debug\yuvarlama.csproj.CoreCompileInputs.cache
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarlama\yuvarlama\obj\Debug\yuvarlama.exe
+C:\Users\Abdulkadir\Desktop\Yuvarla\yuvarlama\yuvarlama\obj\Debug\yuvarlama.pdb

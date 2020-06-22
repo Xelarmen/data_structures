@@ -1,0 +1,6 @@
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Recursive\ozyineli\ozyineli\obj\Debug\ozyineli.csprojAssemblyReference.cache
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Recursive\ozyineli\ozyineli\bin\Debug\ozyineli.exe.config
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Recursive\ozyineli\ozyineli\bin\Debug\ozyineli.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Recursive\ozyineli\ozyineli\bin\Debug\ozyineli.pdb
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Recursive\ozyineli\ozyineli\obj\Debug\ozyineli.exe
+C:\Users\Abdulkadir\Desktop\Algoritma ders kodu\Recursive\ozyineli\ozyineli\obj\Debug\ozyineli.pdb
